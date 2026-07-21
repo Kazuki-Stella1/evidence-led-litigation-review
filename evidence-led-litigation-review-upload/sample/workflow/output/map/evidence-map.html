@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>完全架空・試作品取引事件の証拠マップ — 証拠マップ</title>
+<style>
+body { margin: 0; background: #eef2f6; color: #101828; font-family: system-ui, sans-serif; }
+.toolbar { position: sticky; top: 0; z-index: 2; display: flex; gap: 10px; align-items: center; padding: 12px 20px; background: rgba(255,255,255,.96); border-bottom: 1px solid #d0d5dd; }
+.toolbar strong { margin-right: 10px; }
+button { border: 1px solid #98a2b3; background: white; border-radius: 999px; padding: 8px 15px; cursor: pointer; font-weight: 700; }
+button.active { background: #101828; color: white; border-color: #101828; }
+.map { max-width: 1680px; margin: 20px auto; box-shadow: 0 10px 35px rgba(16,24,40,.12); overflow: auto; background: white; }
+.map svg { display: block; min-width: 1180px; width: 100%; height: auto; }
+.notice { max-width: 1640px; margin: 14px auto 28px; padding: 0 20px; color: #475467; }
+@media print { .toolbar, .notice { display: none; } .map { margin: 0; box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <strong>表示</strong>
+  <button class="active" data-filter="all">すべて</button>
+  <button data-filter="self">自分側</button>
+  <button data-filter="opponent">相手方</button>
+  <button data-filter="neutral">中立・その他</button>
+</div>
+<div class="map"><svg id="evidence-map-svg" xmlns="http://www.w3.org/2000/svg" width="1680" height="2860" viewBox="0 0 1680 2860">
+
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 z" fill="#64c4e8"/>
+  </marker>
+</defs>
+
+
+<style>
+  .canvas { fill: #f8fafc; }
+  .axis { stroke: #64c4e8; stroke-width: 14; stroke-linecap: round; }
+  .month-tick { stroke: #0e7490; stroke-width: 4; }
+  .month-label { fill: #0e5268; font: 700 23px system-ui, sans-serif; }
+  .connector { stroke-width: 3; fill: none; opacity: .75; }
+  .node { stroke-width: 5; fill: #ffffff; }
+  .card { stroke-width: 2; }
+  .left-card { fill: #ffffff; stroke: #d0d5dd; }
+  .right-card { stroke-width: 2; }
+  text { font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic", "Hiragino Sans", sans-serif; }
+  .card-title { fill: #101828; font-size: 22px; font-weight: 800; }
+  .field { fill: #344054; font-size: 16px; }
+  .proves { fill: #05603a; }
+  .causation { fill: #175cd3; }
+  .contradictions { fill: #b42318; }
+  .inferences { fill: #7a5af8; }
+  .legal { fill: #6941c6; }
+  .side-label { font-size: 17px; font-weight: 800; }
+  .evidence-id { fill: #101828; font-size: 29px; font-weight: 850; }
+  .evidence-date { fill: #101828; font-size: 22px; font-weight: 750; }
+  .source-title { fill: #101828; font-size: 19px; font-weight: 650; }
+  .source-meta { fill: #475467; font-size: 15px; }
+  .legend { font: 18px system-ui, sans-serif; fill: #344054; }
+  .title { font: 800 38px system-ui, sans-serif; fill: #101828; }
+  .subtitle { font: 20px system-ui, sans-serif; fill: #475467; }
+  .event.hidden { display: none; }
+</style>
+
+<rect class="canvas" width="1680" height="2860"/>
+<text x="42" y="55" class="title">完全架空・試作品取引事件の証拠マップ</text>
+<text x="42" y="88" class="subtitle">左：事実・因果関係・矛盾・立証趣旨・法的評価　／　右：号証・日時・原資料</text>
+<line class="axis" x1="650" y1="2640" x2="980" y2="120" marker-end="url(#arrow)"/>
+<circle cx="1140" cy="58" r="10" fill="#1b73e8"/>
+<text x="1157" y="64" class="legend">自分側</text>
+<circle cx="1315" cy="58" r="10" fill="#d65f32"/>
+<text x="1332" y="64" class="legend">相手方</text>
+<circle cx="1490" cy="58" r="10" fill="#667085"/>
+<text x="1507" y="64" class="legend">中立・その他</text>
+<line class="month-tick" x1="602.0" y1="2626" x2="698.0" y2="2654"/>
+<rect x="585.0" y="2667" width="130" height="34" rx="17" fill="#f8fafc" opacity="0.96"/>
+<text x="650.0" y="2692" text-anchor="middle" class="month-label">2026年01月</text>
+<g class="event" data-side="self" data-month="2026-01">
+<line class="connector" stroke="#1b73e8" x1="573" y1="2640" x2="632.0" y2="2640"/>
+<line class="connector" stroke="#1b73e8" x1="668.0" y1="2640" x2="712.0" y2="2640"/>
+<rect class="card left-card" x="38" y="2465.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="2496.0">架空注文書</tspan></text>
+<text class="field facts"><tspan x="56.0" y="2550.0">事実: 1月10日に注文書が作成された。</tspan></text>
+<text class="field proves"><tspan x="56.0" y="2575.0">立証趣旨: 注文書に記載された数量、代金及び納期を直接示す。</tspan></text>
+<text class="field causation"><tspan x="56.0" y="2600.0">因果関係: 後の納期遅延主張の前提となる契約上の日付を示す。</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="2625.0">矛盾点: 相手方が主張する4月30日への納期変更は、この注文</tspan><tspan x="56.0" dy="20">書自体には記載されていない。</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="2671.0">推論: この証拠だけでは、後日の納期変更合意がなかったことま</tspan><tspan x="56.0" dy="20">では直接証明しない。</tspan></text>
+<text class="field legal"><tspan x="56.0" y="2717.0">法的評価: 契約内容の評価資料であり、債務不履行の成立は他の</tspan><tspan x="56.0" dy="20">証拠と併せて判断する。</tspan></text>
+<rect class="card right-card" fill="#eaf3ff" stroke="#1b73e8" x="712.0" y="2531.0" width="500.0" height="218" rx="18"/>
+<rect x="726.0" y="2543.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#1b73e8"><text class="side-label"><tspan x="731.0" y="2558.0">自分側</tspan></text><text class="evidence-id"><tspan x="731.0" y="2590.0">甲1</tspan></text><text class="evidence-date"><tspan x="731.0" y="2623.0">2026-01-10</tspan></text><text class="source-title"><tspan x="731.0" y="2652.0">架空注文書</tspan></text><text class="source-meta"><tspan x="731.0" y="2703.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#1b73e8" cx="650.0" cy="2640" r="17"/>
+</g>
+<g class="event" data-side="opponent" data-month="2026-01">
+<line class="connector" stroke="#d65f32" x1="573" y1="2250" x2="683.1" y2="2250"/>
+<line class="connector" stroke="#d65f32" x1="719.1" y1="2250" x2="763.0714285714286" y2="2250"/>
+<rect class="card left-card" x="38" y="2075.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="2106.0">架空社内ログ</tspan></text>
+<text class="field facts"><tspan x="56.0" y="2160.0">事実: 1月20日に原材料を仮予約したとの記録がある。</tspan></text>
+<text class="field proves"><tspan x="56.0" y="2185.0">立証趣旨:</tspan><tspan x="56.0" dy="20">社内ログに仮予約と承認記録なしの記載があることを示す。</tspan></text>
+<text class="field causation"><tspan x="56.0" y="2231.0">因果関係: 製作準備の開始時期に関する補助資料となる。</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="2256.0">矛盾点: 相手方の納期延期合意主張と整合しない可能性がある。</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="2281.0">推論: 社内ログに記録がないことだけで、当事者間の合意不存在</tspan><tspan x="56.0" dy="20">は確定しない。</tspan></text>
+<text class="field legal"><tspan x="56.0" y="2327.0">法的評価: 補助的資料であり、合意の有無は当事者間連絡等と併</tspan><tspan x="56.0" dy="20">せて検討する。</tspan></text>
+<rect class="card right-card" fill="#fff0e9" stroke="#d65f32" x="763.1" y="2141.0" width="500.0" height="218" rx="18"/>
+<rect x="777.1" y="2153.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#d65f32"><text class="side-label"><tspan x="782.1" y="2168.0">相手方</tspan></text><text class="evidence-id"><tspan x="782.1" y="2200.0">乙2</tspan></text><text class="evidence-date"><tspan x="782.1" y="2233.0">2026-01-20</tspan></text><text class="source-title"><tspan x="782.1" y="2262.0">架空社内ログ</tspan></text><text class="source-meta"><tspan x="782.1" y="2313.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#d65f32" cx="701.1" cy="2250" r="17"/>
+</g>
+<line class="month-tick" x1="704.1" y1="1846" x2="800.1" y2="1874"/>
+<rect x="687.1" y="1887" width="130" height="34" rx="17" fill="#f8fafc" opacity="0.96"/>
+<text x="752.1" y="1912" text-anchor="middle" class="month-label">2026年02月</text>
+<g class="event" data-side="self" data-month="2026-02">
+<line class="connector" stroke="#1b73e8" x1="573" y1="1860" x2="734.1" y2="1860"/>
+<line class="connector" stroke="#1b73e8" x1="770.1" y1="1860" x2="814.1428571428571" y2="1860"/>
+<rect class="card left-card" x="38" y="1685.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="1716.0">架空振込記録</tspan></text>
+<text class="field facts"><tspan x="56.0" y="1770.0">事実:</tspan><tspan x="56.0" dy="20">2月3日に120万円の振込処理が完了したと記録されている。</tspan></text>
+<text class="field proves"><tspan x="56.0" y="1816.0">立証趣旨: 指定口座への120万円の送金処理を直接示す。</tspan></text>
+<text class="field causation"><tspan x="56.0" y="1841.0">因果関係:</tspan><tspan x="56.0" dy="20">代金不受領という相手方主張に対する反対資料となる。</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="1887.0">矛盾点: 相手方書面の『一度も受領していない』との記載と緊張</tspan><tspan x="56.0" dy="20">関係にある。</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="1933.0">推論: 実際の口座帰属及び組戻しの有無は、この転記だけでは確</tspan><tspan x="56.0" dy="20">定しない。</tspan></text>
+<text class="field legal"><tspan x="56.0" y="1979.0">法的評価: 代金支払の重要資料だが、最終利用時は元記録と口座</tspan><tspan x="56.0" dy="20">情報を確認する。</tspan></text>
+<rect class="card right-card" fill="#eaf3ff" stroke="#1b73e8" x="814.1" y="1751.0" width="500.0" height="218" rx="18"/>
+<rect x="828.1" y="1763.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#1b73e8"><text class="side-label"><tspan x="833.1" y="1778.0">自分側</tspan></text><text class="evidence-id"><tspan x="833.1" y="1810.0">甲2</tspan></text><text class="evidence-date"><tspan x="833.1" y="1843.0">2026-02-03</tspan></text><text class="source-title"><tspan x="833.1" y="1872.0">架空振込記録</tspan></text><text class="source-meta"><tspan x="833.1" y="1923.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#1b73e8" cx="752.1" cy="1860" r="17"/>
+</g>
+<g class="event" data-side="opponent" data-month="2026-02">
+<line class="connector" stroke="#d65f32" x1="573" y1="1470" x2="785.2" y2="1470"/>
+<line class="connector" stroke="#d65f32" x1="821.2" y1="1470" x2="865.2142857142858" y2="1470"/>
+<rect class="card left-card" x="38" y="1295.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="1326.0">架空チャット画面の転記</tspan></text>
+<text class="field facts"><tspan x="56.0" y="1380.0">事実:</tspan><tspan x="56.0" dy="20">2月15日時点で担当者の画面上は未確認だったとの発言がある。</tspan></text>
+<text class="field proves"><tspan x="56.0" y="1426.0">立証趣旨: 担当者がその時点で画面上の入金を確認できなかった</tspan><tspan x="56.0" dy="20">と発言したことを直接示す。</tspan></text>
+<text class="field causation"><tspan x="56.0" y="1472.0">因果関係: 送金記録確認の遅れ又は内部照会の必要性を示す。</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="1497.0">矛盾点: 『画面ではまだ確認できない』という発言は、代金を一</tspan><tspan x="56.0" dy="20">度も受領していないことと同一ではない。</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="1543.0">推論: 実際の入金有無については銀行記録との照合を要する。</tspan></text>
+<text class="field legal"><tspan x="56.0" y="1568.0">法的評価: 不受領の直接証拠ではなく、担当者の認識内容を示す</tspan><tspan x="56.0" dy="20">資料にとどまる。</tspan></text>
+<rect class="card right-card" fill="#fff0e9" stroke="#d65f32" x="865.2" y="1361.0" width="500.0" height="218" rx="18"/>
+<rect x="879.2" y="1373.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#d65f32"><text class="side-label"><tspan x="884.2" y="1388.0">相手方</tspan></text><text class="evidence-id"><tspan x="884.2" y="1420.0">乙1</tspan></text><text class="evidence-date"><tspan x="884.2" y="1453.0">2026-02-15</tspan></text><text class="source-title"><tspan x="884.2" y="1482.0">架空チャット画面の転記</tspan></text><text class="source-meta"><tspan x="884.2" y="1533.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#d65f32" cx="803.2" cy="1470" r="17"/>
+</g>
+<line class="month-tick" x1="806.3" y1="1066" x2="902.3" y2="1094"/>
+<rect x="789.3" y="1107" width="130" height="34" rx="17" fill="#f8fafc" opacity="0.96"/>
+<text x="854.3" y="1132" text-anchor="middle" class="month-label">2026年03月</text>
+<g class="event" data-side="self" data-month="2026-03">
+<line class="connector" stroke="#1b73e8" x1="573" y1="1080" x2="836.3" y2="1080"/>
+<line class="connector" stroke="#1b73e8" x1="872.3" y1="1080" x2="916.2857142857143" y2="1080"/>
+<rect class="card left-card" x="38" y="905.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="936.0">架空履行請求通知</tspan></text>
+<text class="field facts"><tspan x="56.0" y="990.0">事実: 3月1日付けで7日以内の履行を求める文面がある。</tspan></text>
+<text class="field proves"><tspan x="56.0" y="1015.0">立証趣旨:</tspan><tspan x="56.0" dy="20">原告Aが未納品を理由に履行請求をしたことを直接示す。</tspan></text>
+<text class="field causation"><tspan x="56.0" y="1061.0">因果関係:</tspan><tspan x="56.0" dy="20">通知後も履行がなければ解除等の後続主張につながり得る。</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="1107.0">矛盾点: 通知書の記載だけでは、実際に未納品だったこと自体は</tspan><tspan x="56.0" dy="20">確定しない。</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="1153.0">推論: 未納品の事実は配送記録等との照合を要する。</tspan></text>
+<text class="field legal"><tspan x="56.0" y="1178.0">法的評価:</tspan><tspan x="56.0" dy="20">催告の評価資料となるが、到達及び相当期間は別に確認する。</tspan></text>
+<rect class="card right-card" fill="#eaf3ff" stroke="#1b73e8" x="916.3" y="971.0" width="500.0" height="218" rx="18"/>
+<rect x="930.3" y="983.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#1b73e8"><text class="side-label"><tspan x="935.3" y="998.0">自分側</tspan></text><text class="evidence-id"><tspan x="935.3" y="1030.0">甲3</tspan></text><text class="evidence-date"><tspan x="935.3" y="1063.0">2026-03-01</tspan></text><text class="source-title"><tspan x="935.3" y="1092.0">架空履行請求通知</tspan></text><text class="source-meta"><tspan x="935.3" y="1143.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#1b73e8" cx="854.3" cy="1080" r="17"/>
+</g>
+<line class="month-tick" x1="857.4" y1="676" x2="953.4" y2="704"/>
+<rect x="840.4" y="717" width="130" height="34" rx="17" fill="#f8fafc" opacity="0.96"/>
+<text x="905.4" y="742" text-anchor="middle" class="month-label">2026年05月</text>
+<g class="event" data-side="self" data-month="2026-05">
+<line class="connector" stroke="#1b73e8" x1="573" y1="690" x2="887.4" y2="690"/>
+<line class="connector" stroke="#1b73e8" x1="923.4" y1="690" x2="967.3571428571429" y2="690"/>
+<rect class="card left-card" x="38" y="515.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="546.0">原告Aの架空訴状案</tspan></text>
+<text class="field facts"><tspan x="56.0" y="600.0">事実: 未記載</tspan></text>
+<text class="field proves"><tspan x="56.0" y="625.0">立証趣旨: 未記載</tspan></text>
+<text class="field causation"><tspan x="56.0" y="650.0">因果関係: 未記載</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="675.0">矛盾点: 未記載</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="700.0">推論: 未記載</tspan></text>
+<text class="field legal"><tspan x="56.0" y="725.0">法的評価: 未記載</tspan></text>
+<rect class="card right-card" fill="#eaf3ff" stroke="#1b73e8" x="967.4" y="581.0" width="500.0" height="218" rx="18"/>
+<rect x="981.4" y="593.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#1b73e8"><text class="side-label"><tspan x="986.4" y="608.0">自分側</tspan></text><text class="evidence-id"><tspan x="986.4" y="640.0">訴状案</tspan></text><text class="evidence-date"><tspan x="986.4" y="673.0">2026-05-20</tspan></text><text class="source-title"><tspan x="986.4" y="702.0">原告Aの架空訴状案</tspan></text><text class="source-meta"><tspan x="986.4" y="753.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#1b73e8" cx="905.4" cy="690" r="17"/>
+</g>
+<line class="month-tick" x1="908.4" y1="286" x2="1004.4" y2="314"/>
+<rect x="891.4" y="327" width="130" height="34" rx="17" fill="#f8fafc" opacity="0.96"/>
+<text x="956.4" y="352" text-anchor="middle" class="month-label">2026年06月</text>
+<g class="event" data-side="opponent" data-month="2026-06">
+<line class="connector" stroke="#d65f32" x1="573" y1="300" x2="938.4" y2="300"/>
+<line class="connector" stroke="#d65f32" x1="974.4" y1="300" x2="1018.4285714285714" y2="300"/>
+<rect class="card left-card" x="38" y="125.0" width="535" height="350" rx="18"/>
+<text class="card-title"><tspan x="56.0" y="156.0">取引相手Bの架空準備書面</tspan></text>
+<text class="field facts"><tspan x="56.0" y="210.0">事実: 未記載</tspan></text>
+<text class="field proves"><tspan x="56.0" y="235.0">立証趣旨: 未記載</tspan></text>
+<text class="field causation"><tspan x="56.0" y="260.0">因果関係: 未記載</tspan></text>
+<text class="field contradictions"><tspan x="56.0" y="285.0">矛盾点: 未記載</tspan></text>
+<text class="field inferences"><tspan x="56.0" y="310.0">推論: 未記載</tspan></text>
+<text class="field legal"><tspan x="56.0" y="335.0">法的評価: 未記載</tspan></text>
+<rect class="card right-card" fill="#fff0e9" stroke="#d65f32" x="1018.4" y="191.0" width="500.0" height="218" rx="18"/>
+<rect x="1032.4" y="203.0" width="116" height="27" rx="13.5" fill="#ffffff" opacity="0.72"/>
+<g style="fill:#d65f32"><text class="side-label"><tspan x="1037.4" y="218.0">相手方</tspan></text><text class="evidence-id"><tspan x="1037.4" y="250.0">相手方準備書面</tspan></text><text class="evidence-date"><tspan x="1037.4" y="283.0">2026-06-05</tspan></text><text class="source-title"><tspan x="1037.4" y="312.0">取引相手Bの架空準備書面</tspan></text><text class="source-meta"><tspan x="1037.4" y="363.0">頁 [1] / 精度 fast_cache_source_hash_matched</tspan></text></g>
+<circle class="node" stroke="#d65f32" cx="956.4" cy="300" r="17"/>
+</g>
+</svg></div>
+<p class="notice">この図は証拠テキスト台帳のナビゲーションです。重要な引用、日時、金額、署名、画像内容及び争点は元ファイルで確認してください。</p>
+<script>
+for (const button of document.querySelectorAll('button[data-filter]')) {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    document.querySelectorAll('button[data-filter]').forEach(item => item.classList.toggle('active', item === button));
+    document.querySelectorAll('.event').forEach(event => event.classList.toggle('hidden', filter !== 'all' && event.dataset.side !== filter));
+  });
+}
+</script>
+</body>
+</html>

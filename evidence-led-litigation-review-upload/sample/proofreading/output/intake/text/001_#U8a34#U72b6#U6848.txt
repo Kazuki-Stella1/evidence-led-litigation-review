@@ -1,0 +1,61 @@
+# 訴状案｜完全架空の校正用訴状案
+
+- Case ID: `SYNTHETIC-PROOFREADING-001`
+- Side: `self`
+- Kind: `filing`
+- 証拠・出来事の日付: `2026-05-20`
+- 元ファイル: `filing_draft.txt`
+- 元ファイルSHA-256: `42bd3318c50ad6a85270c26db9edc8aa74d9709ae779684afa505c19ed1ad255`
+- 対象頁: `[1]`
+- 抽出方法: `cache:plain:txt`
+- 読取モード: `fast`
+- 重要度: `high`
+- 原本確認済み: `true`
+- 精度状態: `fast_cache_source_hash_matched`
+- 注釈状態: `incomplete`
+
+## 抽出・転記テキスト
+
+完全架空事件 校正用訴状案
+
+原告Aは、令和8年1月10日、取引相手Bに試作品10個をを発注した（甲1）。
+原告Aは、同年2月3日、代金120万円を送金した（甲1）。
+この事実は、債務不履行との因果間係を示す。
+原告Aは、逸出利益10万円を請求する（甲2）。
+なお、証拠説書は別紙のとおりである（甲9。
+
+## 内容要約
+
+- 未記載
+
+## 事実の詳細
+
+- 未記載
+
+## 立証対象・立証趣旨
+
+- 未記載
+
+## 因果関係
+
+- 未記載
+
+## 矛盾点・反対資料
+
+- 未記載
+
+## 推論
+
+- 未記載
+
+## 法的評価
+
+- 未記載
+
+## 原本確認メモ
+
+- 未記載
+
+## 抽出警告
+
+- Annotation fields still require review: summary, facts, proves, causation, contradictions, legal_evaluation

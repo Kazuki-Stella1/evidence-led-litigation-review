@@ -1,0 +1,61 @@
+# 相手方準備書面｜取引相手Bの架空準備書面
+
+- Case ID: `SYNTHETIC-TRADE-002`
+- Side: `opponent`
+- Kind: `filing`
+- 証拠・出来事の日付: `2026-06-05`
+- 元ファイル: `opponent_filing.txt`
+- 元ファイルSHA-256: `5810c4fb3a2bfde4103eac5134bffba111dc1cb286ce1ae592e81c0bbcc19c1b`
+- 対象頁: `[1]`
+- 抽出方法: `cache:plain:txt`
+- 読取モード: `fast`
+- 重要度: `high`
+- 原本確認済み: `true`
+- 精度状態: `fast_cache_source_hash_matched`
+- 注釈状態: `incomplete`
+
+## 抽出・転記テキスト
+
+架空事件 相手方準備書面
+
+取引相手Bは、原告Aから代金を一度も受領していない（乙1）。
+
+また、納期については令和8年4月30日まで延期する合意が成立していた（乙3）。
+
+したがって、令和8年2月28日時点で債務不履行は存在しない。
+
+## 内容要約
+
+- 未記載
+
+## 事実の詳細
+
+- 未記載
+
+## 立証対象・立証趣旨
+
+- 未記載
+
+## 因果関係
+
+- 未記載
+
+## 矛盾点・反対資料
+
+- 未記載
+
+## 推論
+
+- 未記載
+
+## 法的評価
+
+- 未記載
+
+## 原本確認メモ
+
+- 未記載
+
+## 抽出警告
+
+- Annotation fields still require review: summary, facts, proves, causation, contradictions, legal_evaluation

@@ -1,0 +1,8 @@
+﻿finding_id,severity,certainty,category,side,filing_id,source_file,line,column_start,column_end,observed,suggestion,reason,claim_id,evidence_ids,line_text
+PR001,review,high,重複入力,self,訴状案,filing_draft.txt,3,28,29,をを,を,同じ助詞又は接続語が連続しています。,,,原告Aは、令和8年1月10日、取引相手Bに試作品10個をを発注した（甲1）。
+PR002,material,high,号証,self,訴状案,filing_draft.txt,4,26,27,甲1,甲2,主張C2の明示的な対応号証は甲2ですが、この行は甲1を引用しています。,C2,"甲1,甲2",原告Aは、同年2月3日、代金120万円を送金した（甲1）。
+PR003,review,high,誤変換,self,訴状案,filing_draft.txt,5,14,17,因果間係,因果関係,法律上の因果のつながりを表す語は「因果関係」です。,,,この事実は、債務不履行との因果間係を示す。
+PR004,review,high,誤変換,self,訴状案,filing_draft.txt,6,6,9,逸出利益,逸失利益,損害項目の法律用語は「逸失利益」です。,,,原告Aは、逸出利益10万円を請求する（甲2）。
+PR005,review,high,誤変換,self,訴状案,filing_draft.txt,7,4,7,証拠説書,証拠説明書,訴訟書面の文書名としては「証拠説明書」が通常の表記です。,,,なお、証拠説書は別紙のとおりである（甲9。
+PR006,review,confirmed,括弧,self,訴状案,filing_draft.txt,7,18,18,（,対応位置に）を追加,開き括弧「（」に対応する閉じ括弧「）」がありません。,,,なお、証拠説書は別紙のとおりである（甲9。
+PR007,material,confirmed,号証,self,訴状案,filing_draft.txt,7,19,20,甲9,,甲9は証拠台帳にありません。正しい号証は台帳と原本で確認してください。,,甲9,なお、証拠説書は別紙のとおりである（甲9。

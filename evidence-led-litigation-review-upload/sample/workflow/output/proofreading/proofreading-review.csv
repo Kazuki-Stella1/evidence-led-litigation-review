@@ -1,0 +1,2 @@
+﻿finding_id,severity,certainty,category,side,filing_id,source_file,line,column_start,column_end,observed,suggestion,reason,claim_id,evidence_ids,line_text
+PR001,material,confirmed,号証,opponent,相手方準備書面,opponent_filing.txt,5,36,37,乙3,,乙3は証拠台帳にありません。正しい号証は台帳と原本で確認してください。,,乙3,また、納期については令和8年4月30日まで延期する合意が成立していた（乙3）。

@@ -1,0 +1,213 @@
+{
+  "case_id": "SYNTHETIC-TRADE-002",
+  "case_title": "完全架空・試作品取引事件の証拠マップ",
+  "items": [
+    {
+      "id": "訴状案",
+      "title": "原告Aの架空訴状案",
+      "side": "self",
+      "kind": "filing",
+      "source": "self_filing.txt",
+      "event_date": "2026-05-20",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": true,
+      "annotations": {}
+    },
+    {
+      "id": "相手方準備書面",
+      "title": "取引相手Bの架空準備書面",
+      "side": "opponent",
+      "kind": "filing",
+      "source": "opponent_filing.txt",
+      "event_date": "2026-06-05",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": true,
+      "annotations": {}
+    },
+    {
+      "id": "甲1",
+      "title": "架空注文書",
+      "side": "self",
+      "kind": "evidence",
+      "source": "exhibit_ko1.txt",
+      "event_date": "2026-01-10",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["試作品100個、代金120万円、納期2月28日とする架空注文書。"],
+        "facts": ["1月10日に注文書が作成された。", "数量100個、代金120万円、納期2月28日と記載されている。"],
+        "proves": ["注文書に記載された数量、代金及び納期を直接示す。"],
+        "causation": ["後の納期遅延主張の前提となる契約上の日付を示す。"],
+        "contradictions": ["相手方が主張する4月30日への納期変更は、この注文書自体には記載されていない。"],
+        "inferences": ["この証拠だけでは、後日の納期変更合意がなかったことまでは直接証明しない。"],
+        "legal_evaluation": ["契約内容の評価資料であり、債務不履行の成立は他の証拠と併せて判断する。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    },
+    {
+      "id": "甲2",
+      "title": "架空振込記録",
+      "side": "self",
+      "kind": "evidence",
+      "source": "exhibit_ko2.txt",
+      "event_date": "2026-02-03",
+      "source_pages": [1],
+      "importance": "critical",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["原告Aから取引相手B指定口座への120万円の振込完了記録。"],
+        "facts": ["2月3日に120万円の振込処理が完了したと記録されている。"],
+        "proves": ["指定口座への120万円の送金処理を直接示す。"],
+        "causation": ["代金不受領という相手方主張に対する反対資料となる。"],
+        "contradictions": ["相手方書面の『一度も受領していない』との記載と緊張関係にある。"],
+        "inferences": ["実際の口座帰属及び組戻しの有無は、この転記だけでは確定しない。"],
+        "legal_evaluation": ["代金支払の重要資料だが、最終利用時は元記録と口座情報を確認する。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    },
+    {
+      "id": "甲3",
+      "title": "架空履行請求通知",
+      "side": "self",
+      "kind": "evidence",
+      "source": "exhibit_ko3.txt",
+      "event_date": "2026-03-01",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": false,
+      "annotations": {
+        "summary": ["2月28日までに未納品であるとして、3月1日に履行を求めた架空通知。"],
+        "facts": ["3月1日付けで7日以内の履行を求める文面がある。"],
+        "proves": ["原告Aが未納品を理由に履行請求をしたことを直接示す。"],
+        "causation": ["通知後も履行がなければ解除等の後続主張につながり得る。"],
+        "contradictions": ["通知書の記載だけでは、実際に未納品だったこと自体は確定しない。"],
+        "inferences": ["未納品の事実は配送記録等との照合を要する。"],
+        "legal_evaluation": ["催告の評価資料となるが、到達及び相当期間は別に確認する。"],
+        "verification_notes": ["原本確認を未完了とした架空fixture。"]
+      }
+    },
+    {
+      "id": "乙1",
+      "title": "架空チャット画面の転記",
+      "side": "opponent",
+      "kind": "evidence",
+      "source": "exhibit_otsu1.txt",
+      "event_date": "2026-02-15",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["取引相手B担当者が画面上で入金をまだ確認できず、経理確認をすると述べた架空チャット。"],
+        "facts": ["2月15日時点で担当者の画面上は未確認だったとの発言がある。", "原告A担当者は2月3日の振込控えを再送すると述べた。"],
+        "proves": ["担当者がその時点で画面上の入金を確認できなかったと発言したことを直接示す。"],
+        "causation": ["送金記録確認の遅れ又は内部照会の必要性を示す。"],
+        "contradictions": ["『画面ではまだ確認できない』という発言は、代金を一度も受領していないことと同一ではない。"],
+        "inferences": ["実際の入金有無については銀行記録との照合を要する。"],
+        "legal_evaluation": ["不受領の直接証拠ではなく、担当者の認識内容を示す資料にとどまる。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    },
+    {
+      "id": "乙2",
+      "title": "架空社内ログ",
+      "side": "opponent",
+      "kind": "evidence",
+      "source": "exhibit_otsu2.txt",
+      "event_date": "2026-01-20",
+      "source_pages": [1],
+      "importance": "normal",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["原材料の仮予約と納期変更承認記録がない旨の架空社内ログ。"],
+        "facts": ["1月20日に原材料を仮予約したとの記録がある。", "納期変更の承認記録はない。"],
+        "proves": ["社内ログに仮予約と承認記録なしの記載があることを示す。"],
+        "causation": ["製作準備の開始時期に関する補助資料となる。"],
+        "contradictions": ["相手方の納期延期合意主張と整合しない可能性がある。"],
+        "inferences": ["社内ログに記録がないことだけで、当事者間の合意不存在は確定しない。"],
+        "legal_evaluation": ["補助的資料であり、合意の有無は当事者間連絡等と併せて検討する。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "1月10日に試作品100個を120万円で発注した。",
+      "match_terms": ["令和8年1月10日", "試作品100個"],
+      "event_date": "2026-01-10",
+      "date_must_match_evidence": true,
+      "proof_type": "direct",
+      "proof_terms": ["100個", "120万円"],
+      "evidence": [{"id": "甲1", "support": "direct"}],
+      "causes": [],
+      "addresses_contradictions": []
+    },
+    {
+      "id": "C2",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "2月3日に代金120万円を送金した。",
+      "match_terms": ["同年2月3日", "代金120万円"],
+      "event_date": "2026-02-03",
+      "date_must_match_evidence": true,
+      "proof_type": "direct",
+      "proof_terms": ["120万円", "送金処理"],
+      "evidence": [{"id": "甲2", "support": "direct"}],
+      "causes": ["C1"],
+      "addresses_contradictions": ["X1"]
+    },
+    {
+      "id": "C3",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "2月28日までに納品されず、3月1日に履行を求めた。",
+      "match_terms": ["同年2月28日の期限までに", "同年3月1日"],
+      "event_date": "2026-03-01",
+      "proof_type": "causation",
+      "proof_terms": ["履行請求"],
+      "evidence": [{"id": "甲3", "support": "direct"}],
+      "causes": ["C1"],
+      "addresses_contradictions": []
+    },
+    {
+      "id": "O1",
+      "side": "opponent",
+      "filing_id": "相手方準備書面",
+      "statement": "原告Aから代金を一度も受領していない。",
+      "match_terms": ["代金を一度も受領していない"],
+      "event_date": "2026-02-15",
+      "proof_type": "direct",
+      "proof_terms": ["不受領"],
+      "evidence": [{"id": "乙1", "support": "inference"}],
+      "causes": [],
+      "addresses_contradictions": []
+    },
+    {
+      "id": "O2",
+      "side": "opponent",
+      "filing_id": "相手方準備書面",
+      "statement": "納期を4月30日まで延期する合意が成立した。",
+      "match_terms": ["令和8年4月30日まで延期する合意"],
+      "event_date": "2026-02-10",
+      "proof_type": "direct",
+      "proof_terms": ["納期変更合意"],
+      "evidence": [{"id": "乙3", "support": "direct"}],
+      "causes": [],
+      "addresses_contradictions": []
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "X1",
+      "side": "opponent",
+      "text": "甲2の振込完了記録と、相手方の『一度も受領していない』との断定が整合するか未解決。",
+      "evidence": ["甲2", "乙1"],
+      "applies_to": ["O1"]
+    }
+  ]
+}

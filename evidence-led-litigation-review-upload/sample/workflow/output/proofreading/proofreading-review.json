@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "SYNTHETIC-TRADE-002",
+  "filing_count": 2,
+  "finding_count": 1,
+  "severity_counts": {
+    "material": 1
+  },
+  "category_counts": {
+    "号証": 1
+  },
+  "side_counts": {
+    "opponent": 1
+  },
+  "filing_text_sha256": {
+    "訴状案": "093847ec70c89802732e4eec6b4666fbdb2772f918e61be4406087c32efb0b02",
+    "相手方準備書面": "01cc461b707feb3ae5f4831d5a8658c573bd69d7b37c4af43bcca1b4bfa89eaa"
+  },
+  "findings": [
+    {
+      "severity": "material",
+      "certainty": "confirmed",
+      "code": "unknown_exhibit_reference",
+      "category": "号証",
+      "side": "opponent",
+      "filing_id": "相手方準備書面",
+      "source_file": "opponent_filing.txt",
+      "extraction_method": "cache:plain:txt",
+      "line": 5,
+      "column_start": 36,
+      "column_end": 37,
+      "observed": "乙3",
+      "suggestion": null,
+      "reason": "乙3は証拠台帳にありません。正しい号証は台帳と原本で確認してください。",
+      "line_text": "また、納期については令和8年4月30日まで延期する合意が成立していた（乙3）。",
+      "claim_id": null,
+      "evidence_ids": [
+        "乙3"
+      ],
+      "location_basis": "extracted_text",
+      "finding_id": "PR001"
+    }
+  ],
+  "disclaimer": "This deterministic report lists configured and structural proofreading candidates. Line and column numbers refer to extracted text, which may differ from Word/PDF visual lines. It does not find every typo, decide legal correctness, or replace original-source review."
+}

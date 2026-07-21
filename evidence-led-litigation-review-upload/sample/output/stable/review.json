@@ -1,0 +1,44 @@
+{
+  "status": "stable candidate",
+  "score": 100,
+  "paragraph_count": 14,
+  "dates": [
+    "令和4年9月16日"
+  ],
+  "cited_exhibits": [
+    "甲1",
+    "甲2",
+    "甲3",
+    "甲4"
+  ],
+  "unused_evidence": [],
+  "damage_term_counts": {
+    "非財産的損害": 2,
+    "精神的苦痛": 0,
+    "休業損害": 3,
+    "逸失利益": 3,
+    "一部請求": 0
+  },
+  "findings": [],
+  "evidence_matrix": [
+    {
+      "paragraph": 8,
+      "excerpt": "被告は令和4年9月16日、原告Aが商品代金を返還していない旨を記載した申立書を提出した（甲1）。しかし、原告Aは令和4年1月から同年4月まで四回に分けて返還していた（甲3）。被告は申立て前の連絡により当事者間の返還協議を認識し（甲2）、送金記録の提示後も申立書の記載を訂正しなかった。",
+      "exhibits": [
+        "甲1",
+        "甲3",
+        "甲2"
+      ],
+      "indexed": true
+    },
+    {
+      "paragraph": 11,
+      "excerpt": "原告Aには、別件のスポーツ傷害による療養歴があった。被告の通知後に診断された睡眠障害は、時期、症状及び原因を異にする別個の医療事象である（甲4）。",
+      "exhibits": [
+        "甲4"
+      ],
+      "indexed": true
+    }
+  ],
+  "disclaimer": "This deterministic report is drafting triage, not a legal merits decision or legal advice."
+}
