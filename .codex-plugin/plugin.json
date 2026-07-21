@@ -1,0 +1,31 @@
+{
+  "name": "evidence-led-litigation-review",
+  "version": "0.3.1",
+  "description": "Local evidence dossiers, timelines, location-specific proofreading, and evidence-first review for Japanese litigation filings.",
+  "author": {
+    "name": "Evidence-Led Litigation Review"
+  },
+  "license": "MIT",
+  "keywords": [
+    "litigation",
+    "evidence",
+    "japanese-legal-writing",
+    "proofreading",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Evidence-Led Litigation Review",
+    "shortDescription": "Cache, map, proofread, and review Japanese litigation filings.",
+    "longDescription": "Combines local evidence extraction, deterministic two-sided consistency triage, line-and-column proofreading, a diagonal chronology map, and a reusable Codex reasoning workflow. It separates fast text navigation from original-source verification, maps allegations to exhibits, lists exact repair locations, tests anticipated defenses, and revises Japanese litigation filings without making the Python tools call a model API.",
+    "developerName": "Evidence-Led Litigation Review",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "この訴状を証拠、論点、因果関係・損害、反論、表現の順でレビューしてください。",
+      "この証拠説明書と本文の号証・立証趣旨を双方向に照合してください。",
+      "この書面の誤記、誤変換、括弧及び号証のずれを行・文字位置付きの校正一覧にしてください。",
+      "証拠を高速確認用テキスト台帳へ取り込み、重要資料は原本確認へ戻したうえで、双方の書面との不整合候補を整理してください。"
+    ]
+  }
+}
