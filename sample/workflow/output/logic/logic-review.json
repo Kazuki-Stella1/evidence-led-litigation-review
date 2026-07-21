@@ -1,0 +1,150 @@
+{
+  "case_id": "SYNTHETIC-TRADE-002",
+  "scope": "self_and_opponent",
+  "finding_count": 11,
+  "severity_counts": {
+    "critical": 2,
+    "material": 3,
+    "review": 6
+  },
+  "side_counts": {
+    "self": 4,
+    "opponent": 7,
+    "neutral": 0
+  },
+  "findings": [
+    {
+      "severity": "critical",
+      "code": "claim_maps_unknown_evidence",
+      "side": "opponent",
+      "message": "O2が存在しない証拠乙3へ対応付けられています。",
+      "claim_id": "O2",
+      "filing_id": "相手方準備書面",
+      "evidence_ids": [
+        "乙3"
+      ],
+      "repair": "号証IDを修正するか、不足する原資料を取り込んでください。"
+    },
+    {
+      "severity": "critical",
+      "code": "filing_cites_unknown_evidence",
+      "side": "opponent",
+      "message": "相手方準備書面は乙3を引用していますが、証拠台帳に存在しません。",
+      "claim_id": null,
+      "filing_id": "相手方準備書面",
+      "evidence_ids": [
+        "乙3"
+      ],
+      "repair": "正確な号証を台帳へ追加するか、書面の引用番号を修正してください。"
+    },
+    {
+      "severity": "material",
+      "code": "direct_claim_uses_inferential_support",
+      "side": "opponent",
+      "message": "O1は直接立証に分類されていますが、乙1の支え方はinferenceです。",
+      "claim_id": "O1",
+      "filing_id": "相手方準備書面",
+      "evidence_ids": [
+        "乙1"
+      ],
+      "repair": "号証が直接示す内容と、そこから先の推論を分けてください。"
+    },
+    {
+      "severity": "material",
+      "code": "proof_purpose_mismatch",
+      "side": "opponent",
+      "message": "O1が求める立証語が対応証拠の注釈にありません: 不受領",
+      "claim_id": "O1",
+      "filing_id": "相手方準備書面",
+      "evidence_ids": [
+        "乙1"
+      ],
+      "repair": "主張を限定し、立証趣旨を修正し、又は不足命題を直接支える資料へ対応付けてください。"
+    },
+    {
+      "severity": "material",
+      "code": "important_source_unverified",
+      "side": "self",
+      "message": "甲2の重要度はcriticalですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "甲2"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "evidence_not_mapped_to_claim",
+      "side": "opponent",
+      "message": "乙2は台帳にありますが、正規化された主張又は書面引用へ対応付けられていません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "乙2"
+      ],
+      "repair": "立証趣旨を特定するか、対象外である旨を記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "important_source_unverified",
+      "side": "opponent",
+      "message": "相手方準備書面の重要度はhighですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "相手方準備書面"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "important_source_unverified",
+      "side": "opponent",
+      "message": "乙1の重要度はhighですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "乙1"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "important_source_unverified",
+      "side": "self",
+      "message": "訴状案の重要度はhighですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "訴状案"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "important_source_unverified",
+      "side": "self",
+      "message": "甲1の重要度はhighですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "甲1"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    },
+    {
+      "severity": "review",
+      "code": "important_source_unverified",
+      "side": "self",
+      "message": "甲3の重要度はhighですが、原本の精密確認が完了していません。",
+      "claim_id": null,
+      "filing_id": null,
+      "evidence_ids": [
+        "甲3"
+      ],
+      "repair": "最終利用前に原本を開き、引用、日付、金額、頁を確認してからsource_checkedを記録してください。"
+    }
+  ],
+  "disclaimer": "これは決定的な不整合候補の一覧です。意味上の網羅性、証拠の真正、法的当否又は因果関係を立証するものではありません。GPT-5.6/Codexによる検討と、人による原本確認が必要です。"
+}

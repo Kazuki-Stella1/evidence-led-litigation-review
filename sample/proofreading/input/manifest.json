@@ -1,0 +1,93 @@
+{
+  "case_id": "SYNTHETIC-PROOFREADING-001",
+  "case_title": "完全架空・校正機能デモ",
+  "items": [
+    {
+      "id": "訴状案",
+      "title": "完全架空の校正用訴状案",
+      "side": "self",
+      "kind": "filing",
+      "source": "filing_draft.txt",
+      "event_date": "2026-05-20",
+      "source_pages": [1],
+      "importance": "high",
+      "source_checked": true,
+      "annotations": {}
+    },
+    {
+      "id": "甲1",
+      "title": "完全架空注文書",
+      "side": "self",
+      "kind": "evidence",
+      "source": "exhibit_ko1.txt",
+      "event_date": "2026-01-10",
+      "source_pages": [1],
+      "importance": "normal",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["試作品10個の完全架空注文書。"],
+        "facts": ["令和8年1月10日付けで試作品10個と記載されている。"],
+        "proves": ["発注日及び数量の記載を直接示す。"],
+        "causation": ["後の送金記録との順序を確認する前提資料となる。"],
+        "contradictions": ["送金の事実自体は示さない。"],
+        "inferences": ["契約成立の法的評価には他の資料も必要である。"],
+        "legal_evaluation": ["契約内容の評価資料。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    },
+    {
+      "id": "甲2",
+      "title": "完全架空振込記録",
+      "side": "self",
+      "kind": "evidence",
+      "source": "exhibit_ko2.txt",
+      "event_date": "2026-02-03",
+      "source_pages": [1],
+      "importance": "normal",
+      "source_checked": true,
+      "annotations": {
+        "summary": ["120万円の完全架空振込記録。"],
+        "facts": ["令和8年2月3日に120万円と記録されている。"],
+        "proves": ["処理日及び金額の記載を直接示す。"],
+        "causation": ["発注後の支払主張に対応する。"],
+        "contradictions": ["口座帰属はこの転記だけでは確定しない。"],
+        "inferences": ["法的な弁済の成否は別途評価を要する。"],
+        "legal_evaluation": ["支払主張の評価資料。"],
+        "verification_notes": ["完全架空fixture。"]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "令和8年1月10日に試作品10個を発注した。",
+      "match_terms": ["令和8年1月10日", "試作品10個"],
+      "proof_type": "direct",
+      "evidence": [{"id": "甲1", "support": "direct"}],
+      "citation_check": "same_line"
+    },
+    {
+      "id": "C2",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "令和8年2月3日に120万円を送金した。",
+      "match_terms": ["同年2月3日", "代金120万円"],
+      "proof_type": "direct",
+      "evidence": [{"id": "甲2", "support": "direct"}],
+      "citation_check": "same_line"
+    },
+    {
+      "id": "C3",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "逸失利益10万円を請求する。",
+      "match_terms": ["利益10万円", "請求する"],
+      "proof_type": "inference",
+      "evidence": [{"id": "甲2", "support": "inference"}],
+      "citation_check": "same_line"
+    }
+  ],
+  "contradictions": []
+}

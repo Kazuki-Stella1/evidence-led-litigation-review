@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence-Led Litigation Review architecture</title>
+  <desc id="desc">A Japanese filing and evidence index flow through local deterministic extraction, logic, and location-specific proofreading, then through a seven-pass GPT-5.6 reasoning skill in Codex, producing a stable filing and review report.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f8fb}.box{fill:#fff;stroke:#243b53;stroke-width:2}.accent{fill:#e8f0fe;stroke:#1a73e8;stroke-width:2}.safe{fill:#e6f4ea;stroke:#188038;stroke-width:2}.t{font:600 24px system-ui,sans-serif;fill:#102a43}.s{font:18px system-ui,sans-serif;fill:#334e68}.a{stroke:#627d98;stroke-width:3;fill:none;marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#627d98"/></marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="420" rx="24"/>
+  <rect class="box" x="45" y="80" width="245" height="250" rx="18"/>
+  <text class="t" x="168" y="125" text-anchor="middle">Local inputs</text>
+  <text class="s" x="75" y="175">Japanese filing</text>
+  <text class="s" x="75" y="215">TXT / MD / DOCX</text>
+  <text class="s" x="75" y="270">Evidence index</text>
+  <text class="s" x="75" y="310">JSON</text>
+  <rect class="accent" x="355" y="80" width="260" height="250" rx="18"/>
+  <text class="t" x="485" y="125" text-anchor="middle">Local checker</text>
+  <text class="s" x="385" y="175">Citation matching</text>
+  <text class="s" x="385" y="215">Damage overlap</text>
+  <text class="s" x="385" y="255">Line/column proofing</text>
+  <text class="s" x="385" y="295">Reports + map</text>
+  <rect class="accent" x="680" y="55" width="260" height="300" rx="18"/>
+  <text class="t" x="810" y="100" text-anchor="middle">GPT-5.6 in Codex</text>
+  <text class="s" x="710" y="145">1. Evidence</text>
+  <text class="s" x="710" y="178">2. Issue chain</text>
+  <text class="s" x="710" y="211">3. Matrix</text>
+  <text class="s" x="710" y="244">4. Causation</text>
+  <text class="s" x="710" y="277">5. Opponent</text>
+  <text class="s" x="710" y="310">6–7. Revise &amp; verify</text>
+  <rect class="safe" x="1005" y="80" width="155" height="250" rx="18"/>
+  <text class="t" x="1082" y="125" text-anchor="middle">Outputs</text>
+  <text class="s" x="1025" y="180">Review</text>
+  <text class="s" x="1025" y="215">Proof list</text>
+  <text class="s" x="1025" y="250">Matrix</text>
+  <text class="s" x="1025" y="285">Stable filing</text>
+  <path class="a" d="M290 205 H345"/>
+  <path class="a" d="M615 205 H670"/>
+  <path class="a" d="M940 205 H995"/>
+</svg>

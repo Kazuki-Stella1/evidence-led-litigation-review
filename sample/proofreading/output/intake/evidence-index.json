@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "case_id": "SYNTHETIC-PROOFREADING-001",
+  "case_title": "完全架空・校正機能デモ",
+  "mode": "fast",
+  "items": [
+    {
+      "id": "訴状案",
+      "title": "完全架空の校正用訴状案",
+      "side": "self",
+      "kind": "filing",
+      "event_date": "2026-05-20",
+      "source_pages": [
+        1
+      ],
+      "importance": "high",
+      "source_file": "filing_draft.txt",
+      "transcript_file": "",
+      "source_sha256": "42bd3318c50ad6a85270c26db9edc8aa74d9709ae779684afa505c19ed1ad255",
+      "transcript_sha256": null,
+      "text_sha256": "f107e6ccf30106a46ac4b20fc0a19c51d1601d2d7c4545c7b9baa6d18f907db0",
+      "source_text_sha256": "f107e6ccf30106a46ac4b20fc0a19c51d1601d2d7c4545c7b9baa6d18f907db0",
+      "extraction_method": "cache:plain:txt",
+      "extraction_mode": "fast",
+      "page_count": 1,
+      "source_checked": true,
+      "source_was_reextracted": false,
+      "transcript_matches_source": null,
+      "precision_status": "fast_cache_source_hash_matched",
+      "original_required_for_final": true,
+      "annotation_status": "incomplete",
+      "missing_annotations": [
+        "summary",
+        "facts",
+        "proves",
+        "causation",
+        "contradictions",
+        "legal_evaluation"
+      ],
+      "annotations": {},
+      "extraction_warnings": [
+        "Annotation fields still require review: summary, facts, proves, causation, contradictions, legal_evaluation"
+      ],
+      "text_file": "text/001_訴状案.txt",
+      "raw_text_file": "raw/001_訴状案.txt"
+    },
+    {
+      "id": "甲1",
+      "title": "完全架空注文書",
+      "side": "self",
+      "kind": "evidence",
+      "event_date": "2026-01-10",
+      "source_pages": [
+        1
+      ],
+      "importance": "normal",
+      "source_file": "exhibit_ko1.txt",
+      "transcript_file": "",
+      "source_sha256": "04c76ecb24d49952a8e7b5d2b499d331f184116beadd8c39a2c0cdc650267c69",
+      "transcript_sha256": null,
+      "text_sha256": "540bb10869f73b14fed4a3c73be5e7cfd57eb28db77e65af8a0c655d8bf95159",
+      "source_text_sha256": "540bb10869f73b14fed4a3c73be5e7cfd57eb28db77e65af8a0c655d8bf95159",
+      "extraction_method": "cache:plain:txt",
+      "extraction_mode": "fast",
+      "page_count": 1,
+      "source_checked": true,
+      "source_was_reextracted": false,
+      "transcript_matches_source": null,
+      "precision_status": "fast_cache_source_hash_matched",
+      "original_required_for_final": false,
+      "annotation_status": "complete",
+      "missing_annotations": [],
+      "annotations": {
+        "summary": [
+          "試作品10個の完全架空注文書。"
+        ],
+        "facts": [
+          "令和8年1月10日付けで試作品10個と記載されている。"
+        ],
+        "proves": [
+          "発注日及び数量の記載を直接示す。"
+        ],
+        "causation": [
+          "後の送金記録との順序を確認する前提資料となる。"
+        ],
+        "contradictions": [
+          "送金の事実自体は示さない。"
+        ],
+        "inferences": [
+          "契約成立の法的評価には他の資料も必要である。"
+        ],
+        "legal_evaluation": [
+          "契約内容の評価資料。"
+        ],
+        "verification_notes": [
+          "完全架空fixture。"
+        ]
+      },
+      "extraction_warnings": [],
+      "text_file": "text/002_甲1.txt",
+      "raw_text_file": "raw/002_甲1.txt"
+    },
+    {
+      "id": "甲2",
+      "title": "完全架空振込記録",
+      "side": "self",
+      "kind": "evidence",
+      "event_date": "2026-02-03",
+      "source_pages": [
+        1
+      ],
+      "importance": "normal",
+      "source_file": "exhibit_ko2.txt",
+      "transcript_file": "",
+      "source_sha256": "88755fc485f8f85f85f8286509b2a64785a5d53e84e31eef92beec94e1b71f8e",
+      "transcript_sha256": null,
+      "text_sha256": "f9055802bbc6aeea985474003810ad90c984aeef10a8d9d9177f25809615cc44",
+      "source_text_sha256": "f9055802bbc6aeea985474003810ad90c984aeef10a8d9d9177f25809615cc44",
+      "extraction_method": "cache:plain:txt",
+      "extraction_mode": "fast",
+      "page_count": 1,
+      "source_checked": true,
+      "source_was_reextracted": false,
+      "transcript_matches_source": null,
+      "precision_status": "fast_cache_source_hash_matched",
+      "original_required_for_final": false,
+      "annotation_status": "complete",
+      "missing_annotations": [],
+      "annotations": {
+        "summary": [
+          "120万円の完全架空振込記録。"
+        ],
+        "facts": [
+          "令和8年2月3日に120万円と記録されている。"
+        ],
+        "proves": [
+          "処理日及び金額の記載を直接示す。"
+        ],
+        "causation": [
+          "発注後の支払主張に対応する。"
+        ],
+        "contradictions": [
+          "口座帰属はこの転記だけでは確定しない。"
+        ],
+        "inferences": [
+          "法的な弁済の成否は別途評価を要する。"
+        ],
+        "legal_evaluation": [
+          "支払主張の評価資料。"
+        ],
+        "verification_notes": [
+          "完全架空fixture。"
+        ]
+      },
+      "extraction_warnings": [],
+      "text_file": "text/003_甲2.txt",
+      "raw_text_file": "raw/003_甲2.txt"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "令和8年1月10日に試作品10個を発注した。",
+      "match_terms": [
+        "令和8年1月10日",
+        "試作品10個"
+      ],
+      "proof_type": "direct",
+      "evidence": [
+        {
+          "id": "甲1",
+          "support": "direct"
+        }
+      ],
+      "citation_check": "same_line"
+    },
+    {
+      "id": "C2",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "令和8年2月3日に120万円を送金した。",
+      "match_terms": [
+        "同年2月3日",
+        "代金120万円"
+      ],
+      "proof_type": "direct",
+      "evidence": [
+        {
+          "id": "甲2",
+          "support": "direct"
+        }
+      ],
+      "citation_check": "same_line"
+    },
+    {
+      "id": "C3",
+      "side": "self",
+      "filing_id": "訴状案",
+      "statement": "逸失利益10万円を請求する。",
+      "match_terms": [
+        "利益10万円",
+        "請求する"
+      ],
+      "proof_type": "inference",
+      "evidence": [
+        {
+          "id": "甲2",
+          "support": "inference"
+        }
+      ],
+      "citation_check": "same_line"
+    }
+  ],
+  "contradictions": [],
+  "proofreading": {},
+  "disclaimer": "Extracted text is a navigation cache, not a substitute for the original source. Annotations and legal evaluations require record-sensitive human or Codex review."
+}
